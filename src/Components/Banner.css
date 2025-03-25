@@ -1,0 +1,257 @@
+.main-sec {
+    gap: 3em;
+    position: relative; /* Ensure main section positioning context */
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Ensure no overflow is visible */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content:space-around; */
+    /* background-color: rgba(0, 0, 0, 0.265); */
+    background-color: #020d2e6e;
+    
+}
+
+.main-sub-sec1, .main-sub-sec2 {
+    display: flex;
+    gap: 0.9em;
+}
+
+.main-sub-sec1{
+    width: 60%;
+    margin-left: 0.5em;
+    margin-top: 5em;
+    /* background-color: blue; */
+    justify-content: flex-start;
+}
+.main-sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    background: url(../Images/bgImg.jpg) no-repeat bottom; /* Background image settings */
+    background-size: cover; /* Cover the element with the background image */
+    opacity: 90%;
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+
+.main-text h1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+    font-size: 3em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.main-text p{
+    margin-top: 1em;
+    color: white;
+}
+.main-text div{
+    width: 30em;
+    margin-left: 6.2em;
+    text-align: justify;
+    
+}
+.txt-rotate .wrap {
+    border-right: 0.08em solid #006589; /* Cursor effect */
+}
+.txt-rotate{
+    color: #00b1e4;
+    background-color: #020d2e8b;
+}
+
+.main-sub-sec2{
+
+    margin-top: 6%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+}
+.main-sub-sec2 img{
+    width: 70%;
+    animation: upDown 4s infinite ease-in-out;
+}
+@keyframes upDown {
+        0% {
+            transform: translateY(-20px);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
+}
+#skill-sec{
+    position: absolute;
+    display: inline;
+    width: 0.15em;
+    margin-top: 2%;
+}
+
+/*adding Responsiveness */
+/* For smaller laptops */
+@media (max-width:1200px) and (min-width: 1025px) {
+
+}
+
+/* For tablets */
+@media (max-width:1024px) and (min-width: 769px) {
+   .main-sec{
+    flex-direction: column;
+    justify-content: center;
+   }
+   .main-text div{
+    margin: 0;
+   }
+   .main-sub-sec1{
+    margin: 0;
+    margin-top: 10em;
+    justify-content: center;
+    align-items: center;
+   }
+   .main-sub-sec2{
+    justify-content: center;
+   }
+   .main-text h1{
+    font-size: 2.5em;
+   }
+   .main-text div{
+    width: 25em;
+   }
+   .txt-rotate{
+    background-color: #020d2e00;
+}
+#skill-sec{
+    position: absolute;
+    display: inline;
+    width: 0.15em;
+    margin-top: 64%;
+}
+}
+
+/* For mobile devices */
+@media (max-width:768px) and (min-width: 481px) {
+    .main-sec{
+        /* background-color: black; */
+        padding-top: 14em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-text h1{
+        font-size: 2.2em;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width:10em;
+    }
+    .main-text div{
+        width: 22em;
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0;
+    }
+    .main-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 22em;
+        /* background-color: red; */
+        text-align: justify;
+        /* margin-left: 1.2em; */
+    }
+    .main-text p{
+        margin-left: 0;
+        padding: 0;
+    }
+    .main-sub-sec1{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+        /* background-color: blue; */
+    }
+    .main-sub-sec2{
+        justify-content: center;
+        width: 60%;
+    }
+    .txt-rotate{
+        background-color: #020d2e00;
+    }
+    #skill-sec{
+        position: absolute;
+        display: inline;
+        width: 0.15em;
+        margin-top: 84em;
+    }
+}
+
+/* For smaller mobile devices */
+@media (max-width:480px) and (min-width: 320px) {
+    .main-sec{
+        /* background-color: black; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0em;
+    }
+    .main-text h1{
+        font-size: 2.2em;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width:10em;
+    }
+    .main-text div{
+        width: 22em;
+        font-size: 0.8em;
+        padding: 0;
+        margin: 0;
+    }
+    .main-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 22em;
+        /* background-color: red; */
+        text-align: justify;
+        /* margin-left: 1.2em; */
+    }
+    .main-text p{
+        margin-left: 0;
+        padding: 0;
+    }
+    .main-sub-sec1{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+        padding-bottom: 0;
+        /* background-color: blue; */
+    }
+    .main-sub-sec2{
+        justify-content: center;
+        width: 80%;
+        /* background-color: red; */
+    }
+    .txt-rotate{
+        background-color: #020d2e00;
+    }
+    #skill-sec{
+        position: absolute;
+        display: inline;
+        width: 0.15em;
+        margin-top: 72em;
+    }
+}

@@ -1,0 +1,199 @@
+.project-sec {
+    width: auto;
+    height: 31em;
+    background-color: #020d2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.8em;
+}
+
+.project-sec-div h2 {
+    /* margin-top: 2em; */
+    color: white;
+    font-size: 1.8em;
+}
+
+.project-sec>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    height: 100%;
+    background: linear-gradient(105deg, #020d2eb8,#1c39729c, #00b3e49a);
+    padding: 2em;
+    border-radius: 64px;
+    border: 1.5px solid #00b1e4;
+}
+
+.proj-bttns-div {
+    /* margin-bottom: 2em; */
+    width: 50%;
+    height: 15%;
+    border: 3px solid #00b1e4;
+    border-radius: 64px;
+    display: flex;
+    background: linear-gradient(#1c3972, #1c3972,#1c3972,#1c3972,#1c3972,#00b1e4);
+}
+
+.proj-bttn {
+    padding: 1.5em;
+    border-style: none;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+}
+
+.proj-bttn:hover {
+    cursor: pointer;
+    /* background: linear-gradient(105deg, #000000ae, #8f75e4); */
+    background: linear-gradient( #020d2eb8, #020d2eb8, #020d2eb8, #020d2eb8,#020d2eb8, white);
+    opacity: 90%;
+}
+
+.tech-btn {
+    border-radius: 64px 0px 0px 64px;
+    /* background: linear-gradient( #020d2eb8, #020d2eb8, #020d2eb8, #020d2eb8, grey); */
+}
+
+.content-btn {
+    border-radius: 0px 64px 64px 0px;
+}
+
+.designs-btn {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.projects img {
+    width: 18em;
+    height: 12em;
+    border-radius: 44px;
+    border: 3px solid #00b1e4;
+    box-shadow: 5px 4px 5px #00b1e4;
+    z-index: 2;
+}
+
+.project-img-div {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.projects img:hover {
+    transform: scale(1.03);
+    border: 0.5px solid white;
+    box-shadow: 5px 4px 5px white;
+    /* filter: blur(2px); */
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.projects a {
+    padding-top: 1em;
+    background-color: transparent;
+    color: white;
+    border-radius: 0px 0px 100px 100px;
+    height: 3em;
+    width: 80%;
+    font-size: 0.9em;
+}
+
+.projects a:hover {
+    color: #00b1e4;
+    filter: brightness(120%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.proj-bttn.active {
+    background: linear-gradient(#020d2eb8, #020d2eb8, #020d2eb8, #020d2eb8,#020d2eb8, white);
+    color: #00b1e4;
+}
+
+.proj-bttn.previous {
+    background: linear-gradient(#1c3972, #1c3972,#1c3972,#1c3972,#1c3972,#00b1e4);
+}
+
+/*adding Responsiveness */
+
+
+/* For smaller laptops */
+@media (max-width:1200px) and (min-width: 1025px) {}
+
+/* For tablets */
+@media (max-width:1024px) and (min-width: 769px) {
+    .project-sec{
+        background-color: #020d2e;
+    }
+    .project-img-div {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .project-sec {
+        height: 64em;
+    }
+    .proj-bttns-div{
+    height: 8%;
+    }
+}
+
+/* For mobile devices */
+@media (max-width:768px) and (min-width: 481px) {
+    project-sec{
+        background-color: #020d2e;
+    }
+    .project-sec>div{
+        margin-top: 28em;
+        width: 78%;
+        height: 58em;
+        padding: 1em;
+    }
+    .project-img-div{
+        flex-direction: column;
+        gap: 1.3em;
+    }
+    .projects img{
+        width: 95%;
+    }
+    .proj-bttns-div{
+        width: 100%;
+    }
+}
+
+/* For smaller mobile devices */
+@media (max-width:480px) and (min-width: 320px) {
+    .project-sec{
+        background-color: #020d2e;
+    }
+    .project-sec>div{
+        border-radius: 24px;
+        margin-top: 28em;
+        width: 78%;
+        height: 58em;
+        padding: 1em;
+    }
+    .project-img-div{
+        flex-direction: column;
+        gap: 1.3em;
+    }
+    .projects img{
+        border-radius: 24px;
+        width: 98%;
+    }
+    .proj-bttns-div{
+        width: 100%;
+    }
+}

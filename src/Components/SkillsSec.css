@@ -1,0 +1,128 @@
+.skills-sec{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 18em;
+    background-color: #020d2e;
+}
+.skills-div{
+    /* position: absolute; */
+    width: 86%;
+    background: linear-gradient(105deg, #020d2eb8,#1c39729c, #00b3e49a);
+    height: 16em;
+    border-radius: 64px;
+    border: 1.5px solid #00b1e4;
+    gap: 0.2em;
+    z-index: 4;
+    padding: 0.2em;
+}
+.skills-div h2{
+    color: white;
+    padding: 0.7em;
+    font-size: 1.8em;
+}
+.skills-div h3{
+    display: inline-block;
+    /* background: linear-gradient(180deg, #000000ae, #000000ae, #000000ae, #000000ae, #000000ae,#000000ae,#000000ae,#000000ae,#000000ae, #00b1e4, #0c323e); */
+    background: linear-gradient(#1c3972, #1c3972,#1c3972,#1c3972,#1c3972,#00b1e4);
+    color:white;
+    border: 3px solid #00b1e4;
+    box-shadow: 3px 2px 3px #00b1e4;
+    margin: 0.3em;
+    padding: 0.55em;
+    font-weight: 300;
+    border-radius: 19px;
+}
+.skills-div h3:hover{
+    border: 3px solid white;
+    box-shadow: 5px 4px 5px white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#creation-sec{
+    position: absolute;
+    display: inline;
+    width: 0.15em;
+    margin-top: 4%;
+}
+
+/*adding Responsiveness */
+
+/* For smaller laptops */
+@media (max-width:1200px) and (min-width: 1025px) {
+    
+}
+
+/* For tablets */
+@media (max-width:1024px) and (min-width: 769px) {
+    .skills-sec{
+        margin-bottom: 60px;
+        margin-top: 60px;
+        background-color: #020d2e;
+    }
+    .skills-div{
+        height: 18em;
+    }
+    #creation-sec{
+        position: absolute;
+        display: inline;
+        width: 0.15em;
+        margin-top: 8%;
+    }
+    
+}
+
+/* For mobile devices */
+@media (max-width:768px) and (min-width: 481px) {
+    .skills-sec{
+        margin-bottom: 60px;
+        margin-top: 40px;
+        background-color: #020d2e;
+    }
+    .skills-div{
+        width: 78%;
+        height: 18em;
+    }
+    .skills-div h3{
+        margin: 0.3em;
+        padding: 0.3em;
+        font-weight: 300;
+        font-size: 0.9em;
+        border-radius: 19px;
+    }
+    #creation-sec{
+        position: absolute;
+        display: inline;
+        width: 0.15em;
+        margin-top: 6em;
+    }
+}
+
+/* For smaller mobile devices */
+@media (max-width:480px) and (min-width: 320px) {
+    .skills-sec{
+        margin-bottom: 60px;
+        margin-top: 40px;
+        background-color: #020d2e;
+        height: 22em;
+    }
+    .skills-div{
+        border-radius: 24px;
+        width: 78%;
+        height: max-content;
+        padding-bottom: 3em;
+    }
+    .skills-div h3{
+        margin: 0.3em;
+        padding: 0.3em;
+        font-weight: 300;
+        font-size: 0.9em;
+        border-radius: 19px;
+    }
+    #creation-sec{
+        position: absolute;
+        display: inline;
+        width: 0.15em;
+        margin-top: 30%;
+    }
+}
