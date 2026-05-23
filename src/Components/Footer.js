@@ -9,9 +9,9 @@ const Footer = () => {
             <div className='foot-div'>
                 <div><p className='foot-connect-text'>Let's connect!</p>
                 <ul className='footer-social-icons'>
-                    <li><a href='https://www.behance.net/rajansharma76' target="_blank"><img className='foot-beh-icon' src={behanceIcon}></img></a></li>
-                    <li><a href='https://github.com/Rajansharma44' target="_blank"><img className='foot-gith-icon' src={githubIcon}></img></a></li>
-                    <li><a href='https://www.linkedin.com/in/rajan-sharma-a5b29224b/' target="_blank"><img className='foot-linkedin-icon' src={linkedinIcon}></img></a></li>
+                 //   <li><a href='https://www.behance.net/rajansharma76' target="_blank"><img className='foot-beh-icon' src={behanceIcon}></img></a></li>
+                 //   <li><a href='https://github.com/Rajansharma44' target="_blank"><img className='foot-gith-icon' src={githubIcon}></img></a></li>
+                 //   <li><a href='https://www.linkedin.com/in/rajan-sharma-a5b29224b/' target="_blank"><img className='foot-linkedin-icon' src={linkedinIcon}></img></a></li>
                 </ul>
                 </div>
                 <div className='last-line'>
