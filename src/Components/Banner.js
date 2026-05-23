@@ -43,10 +43,10 @@ const Banner = () => {
 
                 <span className='main-text' >
                     <div>
-                        <h1>{`Hi! I'm Rajan Sharma`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Front-End Developer", "Graphic Designer", "Content Creator" ]'><span className="wrap">{text}</span></span></h1>
+                        <h1>{`Hi! I'm Chander Mohan`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Voice Over Artist", "Graphic Designer", "Content Creator" ]'><span className="wrap">{text}</span></span></h1>
                     </div>
                     <div>
-                        <p>Aspiring Front-End Engineer with a passion for crafting stunning and user-friendly interfaces. Goal-oriented and dedicated to creating captivating web applications and enhancing user experience through visually appealing design. Additionally skilled in graphic design and content creation, bringing a comprehensive approach to visual storytelling and user engagement.</p>
+                        <p>Aspiring voice-over artist with a passion for delivering expressive, engaging, and high-quality vocal performances. Goal-oriented and dedicated to bringing scripts to life through clear communication, emotion, and storytelling. Skilled in voice modulation, pronunciation, audio recording, and content creation, with a strong focus on creating impactful listener experiences and audience engagement</p>
                     </div>
                     <span id='skill-sec'></span>
                 </span>
