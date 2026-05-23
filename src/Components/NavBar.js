@@ -66,9 +66,9 @@ const NavBar = () => {
             </section>
             <section className='sec2'>
                 <ul className='social-icons'>
-                    <li><a href='https://www.behance.net/rajansharma76' target="_blank"><img className='beh-icon' src={behanceIcon}></img></a></li>
-                    <li><a href='https://github.com/Rajansharma44' target="_blank"><img className='gith-icon' src={githubIcon}></img></a></li>
-                    <li><a href='https://www.linkedin.com/in/rajan-sharma-a5b29224b/' target="_blank"><img className='linkedin-icon' src={linkedinIcon}></img></a></li>
+                  //  <li><a href='https://www.behance.net/rajansharma76' target="_blank"><img className='beh-icon' src={behanceIcon}></img></a></li>
+                 //   <li><a href='https://github.com/Rajansharma44' target="_blank"><img className='gith-icon' src={githubIcon}></img></a></li>
+                 //   <li><a href='https://www.linkedin.com/in/rajan-sharma-a5b29224b/' target="_blank"><img className='linkedin-icon' src={linkedinIcon}></img></a></li>
                 </ul>
                 <span className='top-but-box'>
                     <button className='connect-but' id='connectButton'>
